@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import faker from 'faker';
-import CommentDetail from './CommentDetail';
 import moment from 'moment';
+import CommentDetail from './CommentDetail';
+import ApprovalCard from './ApprovalCard';
+
 
 // CF STUDENTS, FOLLOW THE COMMITS!
 // TODO: Instructors, Turn commits into lessons
@@ -12,6 +14,7 @@ const App = () => {
   return (
     <div>
       <div className='ui container comments'>
+        <ApprovalCard />
         <CommentDetail
           author='Will'
           time={time}
