@@ -4,44 +4,38 @@ import faker from 'faker';
 import CommentDetail from './CommentDetail';
 import moment from 'moment';
 
+// CF STUDENTS, FOLLOW THE COMMITS!
+// TODO: Instructors, Turn commits into lessons
+
 const App = () => {
   const time = moment().format('h:mm MMMM Do YYYY');
   return (
     <div>
       <div className='ui container comments'>
-        <CommentDetail author='Will' time={time} text='This is a comment' />
-      </div>
-      <div className='ui container comments'>
-        <div className='comment'>
-          <a href='/' className='avatar'>
-            <img alt='avatar' src={faker.image.avatar()} />
-          </a>
-          <div className='content'>
-            <a href='/' className='author'>
-              Will
-            </a>
-            <div className='metadata'>
-              <span className='date'>Today at 3pm</span>
-            </div>
-            <div className='test'>Great Post</div>
-          </div>
-        </div>
-      </div>
-      <div className='ui container comments'>
-        <div className='comment'>
-          <a href='/' className='avatar'>
-            <img alt='avatar' src={faker.image.avatar()} />
-          </a>
-          <div className='content'>
-            <a href='/' className='author'>
-              Will
-            </a>
-            <div className='metadata'>
-              <span className='date'>Today at 3pm</span>
-            </div>
-            <div className='test'>Great Post</div>
-          </div>
-        </div>
+        <CommentDetail
+          author='Will'
+          time={time}
+          content='This is a comment'
+          avatar={faker.image.avatar()}
+        />
+        <CommentDetail
+          author='Mark'
+          time={time}
+          content='This is a comment'
+          avatar={faker.image.avatar()}
+        />
+        <CommentDetail
+          author='Frank'
+          time={time}
+          content='This is a comment'
+          avatar={faker.image.avatar()}
+        />
+        <CommentDetail
+          author='Loni'
+          time={time}
+          content='This is a comment'
+          avatar={faker.image.avatar()}
+        />
       </div>
     </div>
   );
