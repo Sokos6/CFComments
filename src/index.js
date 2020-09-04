@@ -5,7 +5,6 @@ import moment from 'moment';
 import CommentDetail from './CommentDetail';
 import ApprovalCard from './ApprovalCard';
 
-
 // CF STUDENTS, FOLLOW THE COMMITS!
 // TODO: Instructors, Turn commits into lessons
 
@@ -14,31 +13,38 @@ const App = () => {
   return (
     <div>
       <div className='ui container comments'>
-        <ApprovalCard />
-        <CommentDetail
-          author='Will'
-          time={time}
-          content='This is a comment'
-          avatar={faker.image.avatar()}
-        />
-        <CommentDetail
-          author='Mark'
-          time={time}
-          content='This is a comment'
-          avatar={faker.image.avatar()}
-        />
-        <CommentDetail
-          author='Frank'
-          time={time}
-          content='This is a comment'
-          avatar={faker.image.avatar()}
-        />
-        <CommentDetail
-          author='Loni'
-          time={time}
-          content='This is a comment'
-          avatar={faker.image.avatar()}
-        />
+        <ApprovalCard>
+          <CommentDetail
+            author='Will'
+            time={time}
+            content='This is a comment'
+            avatar={faker.image.avatar()}
+          />
+        </ApprovalCard>
+        <ApprovalCard>
+          <CommentDetail
+            author='Mark'
+            time={time}
+            content='This is a comment'
+            avatar={faker.image.avatar()}
+          />
+        </ApprovalCard>
+        <ApprovalCard>
+          <CommentDetail
+            author='Frank'
+            time={time}
+            content='This is a comment'
+            avatar={faker.image.avatar()}
+          />
+        </ApprovalCard>
+        <ApprovalCard>
+          <CommentDetail
+            author='Loni'
+            time={time}
+            content='This is a comment'
+            avatar={faker.image.avatar()}
+          />
+        </ApprovalCard>
       </div>
     </div>
   );
