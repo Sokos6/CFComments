@@ -14,6 +14,12 @@ const App = () => {
     <div>
       <div className='ui container comments'>
         <ApprovalCard>
+          <div>
+            <h4>HEY!</h4>
+            You can use this without passing in a component!
+          </div>
+        </ApprovalCard>
+        <ApprovalCard>
           <CommentDetail
             author='Will'
             time={time}
